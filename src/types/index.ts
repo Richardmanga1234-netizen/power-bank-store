@@ -1,11 +1,10 @@
-export interface Product {
-  id: string;
-  slug: string;
+import type { ColorId } from "@/lib/product";
+
+export interface CartItem {
+  productId: string;
   name: string;
-  tagline: string;
   price: number;
-  capacityMah: number;
-  outputWatts: number;
-  color: string;
+  color: ColorId;
+  quantity: number;
   image: string;
 }
